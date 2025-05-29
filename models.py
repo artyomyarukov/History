@@ -31,7 +31,26 @@ ROUTES = {
             str(BASE_DIR / "assets" / "route_3" / f"{i}-gostinka-nevskiy.wav")
             for i in range(1, 18)  # 5 файлов
         ]
+    },
+
+    "gostinka": {
+        "name": "🌉 Гостиный двор - Невский",
+        "link": "https://yandex.ru/maps/?um=constructor%3Ab5ad4733a6a24ea66b074a257108c613b6df135e0a4a3d4c79a6bf6ceaedafcb&source=constructorLink",
+        "audios": [
+            str(BASE_DIR / "assets" / "route_3" / f"{i}-gostinka-nevskiy.wav")
+            for i in range(1, 18)  # 5 файлов
+        ]
+    },
+
+    "vladimirskaya": {
+        "name": "🌉 Владимирская - Чернышевская",
+        "link": "https://yandex.ru/maps/2/saint-petersburg/?ll=30.366677%2C59.922064&mode=usermaps&source=constructorLink&um=constructor%3A62e7906ac9a1362c030da8f154a8b6f5a295bb1136d92f71a6c95575a465e16b&z=12.64",
+        "audios": [
+            str(BASE_DIR / "assets" / "route_4" / f"{i}_vladimirskaya-chernyshevskaya.wav")
+            for i in range(1, 23)  # 22 файлов
+        ]
     }
+
 }
 
 # Контакты и информация о проекте
