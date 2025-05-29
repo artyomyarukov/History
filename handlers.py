@@ -44,15 +44,6 @@ async def handle_routes_menu(callback: types.CallbackQuery):
     finally:
         await callback.answer()
 
-'''
-@router.callback_query(F.data == "profile")
-async def handle_profile(callback: types.CallbackQuery):
-    await callback.answer(
-        "Раздел профиля в разработке ⚙️",
-        show_alert=True
-    )
-'''
-
 
 @router.callback_query(F.data == "contacts")
 async def handle_contacts(callback: types.CallbackQuery):
@@ -65,7 +56,7 @@ async def handle_contacts(callback: types.CallbackQuery):
             "• <a href='https://t.me/artemartemmmmmm'>Артём</a>\n"
             "• <a href='https://t.me/helldreamm'>Иван</a>\n"
             "• <a href='https://t.me/libik891'>Ильдар</a>\n\n"
-
+            "Cсылка на сайт: " + PROJECT_INFO["website"]
         )
 
         # Отправляем сообщение с клавиатурой
